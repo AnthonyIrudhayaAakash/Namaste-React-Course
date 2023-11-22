@@ -4,13 +4,20 @@
   "description": "Namaste React Course",
   
   "scripts": {
+<<<<<<< HEAD
     "start": "parcel index.html",
     "build": "parcel build index.html",
+=======
+>>>>>>> 0f715552b0f9fdc56a8af32713f4566b90e72410
     "test": "jest"
   },
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "https://github.com/AnthonyIrudhayaAakash/Namaste-React-Course-assignments"
+=======
+    "url": "(https://github.com/AnthonyIrudhayaAakash/Namaste-React-Course)"
+>>>>>>> 0f715552b0f9fdc56a8af32713f4566b90e72410
   },
   "keywords": [
     "react"
