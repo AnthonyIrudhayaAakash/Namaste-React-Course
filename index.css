@@ -1,38 +1,144 @@
 body{
-    height: 100vh;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,70,1) 100%);
+    background-color: #1a1a1a;
 }
-#container{
-    display: grid;
-    place-items: center;
-    justify-content: center;
+:root{
+    --lightcolor : #d9d9d9;
 }
-#containerJS{
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    grid-template-columns: 120px 450px 50px; 
-}
-    
-#searchbar{
+.header{
     display: flex;
-   /* justify-content: center;*/
-   /* place-items: center;*/
-    width:420px;
-    height:50px;
-    padding: 10px;
-    border: none;
-    outline: none;
-    background: none;
-}
-.search-form{
-    display: flex;
+    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.nav-links{
+    display: flex;
     justify-content: center;
-    height: 50px;
-    border-radius: 10px;
-    background: rgb(238,193,174);
-    background: radial-gradient(circle, rgba(238,193,174,0.9921218487394958) 0%, rgba(148,187,233,1) 100%);
+    align-items: center;
+}
+.nav-links > ul {
+    display:flex;
+    list-style-type: none;
+    padding: 0px 20px;
+    color:var(--lightcolor)
+    
+}
+.navlist > li {
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 750;
+    
+    padding: 10px;
+}
+.searchbar-container{
+    display: flex;
+    
+}
+
+.child-searchbar-div{
+    display: flex;
+    background-color:#d9d9d9;
+    border-radius: 50px;
+}
+.searchinput{
+    border-style: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    width: 300px;
+    padding:15px 20px;
+    background-color: transparent;
+    
+
+}
+.search-btn{
+    border-style: none;
+    background-color: transparent;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.Main-Container{
+    display: flex;
+    justify-content:space-between;
+    margin: 15px 0px;
+    flex-wrap: wrap;
+
+}
+.Bodycontainer{
+    display: grid;
+    justify-content: center;
+    place-items: center;
+
+}
+.Restaurent-Cards{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
    
+    width: 250px;
+   
+    padding: 10px 15px;
+    border-radius:10px;
+    margin:10px;
+    background-color: transparent;
+    color: var(--lightcolor);
+   
+}
+
+h3,p{
+    margin :0;
+}
+/* .Bodycontainer::before{
+    content: 'Top Restaurent Chains in your Location';
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+    color: var(--lightcolor);
+} */
+h1{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+    color: var(--lightcolor);
+}
+.rating{
+    display: grid;
+    grid-template-columns: 30px 110px;
+    place-items: bottom;
+    font-weight: 750;
+    
+}
+.card-image{
+    width:275px;
+    height:185px;
+    border-radius: 25px;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px lightblue inset;
+
+    /* filter:blur(1px);
+    z-index: -1; */
+    transition: transform 0.5s ease;
+}
+.card-image:hover{
+     /* width:225px; */
+    /*border-radius: 20px; */
+    transform: scale(0.95);
+    cursor: pointer;
+}
+.offer-scroller{
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: 33%;
+   overflow-x: auto;
+   overscroll-behavior-inline: contain;
+}
+.offer-card-container{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
