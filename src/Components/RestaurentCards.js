@@ -3,7 +3,7 @@ const RestaurentCards = (props) =>{
     //const {restdata}=props;
     const { name, cloudinaryImageId, cuisines, avgRating} = props.restdata?.info || {};
     const { slaString } = props.restdata?.info?.sla || { slaString: 'Default Value' };  
-    console.log(avgRating)
+    //console.log(avgRating)
     return (
         <div className="Restaurent-Cards">
             

@@ -9,18 +9,16 @@ import Offercards from "./Components/Offercards";
 
 
 const root = ReactDOM.createRoot(document.getElementById("container"));
-
-
 const MasterLayout = () =>{
     return (
         <div className="MasterContainer">
             <Header/>
-            <h1>Top Restaurent Chains in your Location</h1>
             
-            <div className="Bodycontainer">
+            
+            {/* <div className="Bodycontainer">
                
                <Body/>
-            </div>
+            </div> */}
         </div>
     )
 }
