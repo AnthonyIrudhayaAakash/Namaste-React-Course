@@ -1,0 +1,365 @@
+body {
+  background-color: #faf9f9;
+}
+
+:root {
+  --darkcolor: #281d1d;
+  --graycolor: #ab9e9e;
+}
+
+#container {
+  grid-template-columns: 1fr;
+  display: grid;
+}
+
+h4 {
+  margin: 0;
+}
+
+.header {
+  grid-template-rows: 150px 1fr;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+}
+
+.header-container {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.nav-links {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav-links > ul {
+  color: var(--darkcolor);
+  padding: 0 20px;
+  list-style-type: none;
+  display: flex;
+}
+
+.navlist > li {
+  padding: 15px;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.searchbar-container {
+  display: flex;
+}
+
+.child-searchbar-div {
+  background-color: #cdc1c1;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 80px;
+  display: flex;
+}
+
+.searchinput {
+  background-color: #0000;
+  border-style: none;
+  outline: none;
+  width: 300px;
+  height: 75px;
+  padding: 15px 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+}
+
+.search-btn {
+  cursor: pointer;
+  background-color: #0000;
+  border-style: none;
+  padding: 15px 20px;
+}
+
+#login-btn {
+  border-style: none;
+  border-radius: 5px;
+  padding: 0 20px;
+  transition: transform .5s ease-in-out;
+}
+
+#login-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.Main-Container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 15px 0;
+  display: flex;
+}
+
+.Bodycontainer {
+  align-items: center;
+  display: grid;
+}
+
+.Restaurent-Cards {
+  color: var(--darkcolor);
+  background-color: #0000;
+  border-radius: 10px;
+  width: 250px;
+  margin: 10px;
+  padding: 10px 15px;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+}
+
+h3, p {
+  margin: 0;
+}
+
+h1 {
+  color: var(--darkcolor);
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+}
+
+.rating {
+  place-items: bottom;
+  grid-template-columns: 30px 110px;
+  font-weight: 750;
+  display: grid;
+}
+
+.card-image {
+  object-fit: cover;
+  border-radius: 25px;
+  width: 275px;
+  height: 185px;
+  transition: transform .5s;
+  box-shadow: inset 10px 10px 5px #add8e6;
+}
+
+.card-image:hover {
+  cursor: pointer;
+  transform: scale(.95);
+}
+
+.offer-scroller {
+  overscroll-behavior-inline: contain;
+  grid-auto-columns: 33%;
+  grid-auto-flow: column;
+  display: grid;
+  overflow-x: auto;
+}
+
+.offer-card-container {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  inline-size: 100%;
+}
+
+.filter-search-body-div {
+  grid-template-rows: 100px 1fr;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.filter-search-div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Filter-btn {
+  background-color: #cdc1c1;
+  border: 0;
+  border-radius: 50px;
+  width: 75px;
+  height: 50px;
+  margin: 5px 20px;
+  padding: 5px 10px;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  transition: transform 1s, letter-spacing .5s;
+}
+
+.Filter-btn:hover {
+  cursor: pointer;
+  letter-spacing: 2px;
+  transform: rotate(360deg);
+}
+
+#shimmer-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#shimmer-card {
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px 15px;
+  animation: 1s infinite shadow;
+}
+
+#shimmer-image {
+  background-color: var(--graycolor);
+  border-radius: 5px;
+  width: 250px;
+  height: 120px;
+  animation: 1s infinite shadow;
+}
+
+#shimmer-name, #shimmer-cuisine, #shimmer-details {
+  background-color: var(--graycolor);
+  border-radius: 5px;
+  width: 235px;
+  height: 20px;
+  margin: 5px 0;
+  animation: 1s infinite shadow;
+}
+
+#shimmer-details {
+  background-color: var(--graycolor);
+  width: 220px;
+  height: 30px;
+}
+
+.menu-container {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.rest-name, .rest-cuisines, .rest-avgrating, .rest-area-distance {
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  display: flex;
+}
+
+.title-container {
+  background-color: #faf9f9;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  width: 750px;
+  height: 120px;
+  display: flex;
+}
+
+.title-section-one, .title-section-two {
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  margin: 10px 15px;
+  padding: 10px 15px;
+  display: grid;
+}
+
+.title-section-two {
+  grid-template-rows: 1fr;
+}
+
+.offer-timing-container {
+  justify-content: space-around;
+  display: flex;
+}
+
+.time-card, .cost-two-card {
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  box-shadow: 0 7px 29px #64646f33;
+}
+
+.menu-filter-btn-div {
+  background-color: #faf9f9;
+  border-radius: 5px;
+  justify-content: center;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  display: flex;
+  box-shadow: 0 7px 29px #64646f33;
+}
+
+.menu-filter-btn-div:hover {
+  cursor: pointer;
+}
+
+.RestaurantTimeCost_icon__8UdT4 {
+  margin: 10px;
+  display: flex;
+}
+
+.delivery-time, .cost-two {
+  font-family: Kanit, sans-serif;
+  font-weight: 800;
+}
+
+.gap-column {
+  background-color: #cdc1c1;
+  height: 15px;
+  margin: 10px 0;
+}
+
+.category {
+  margin-bottom: 10px;
+  font-family: Kanit, sans-serif;
+  font-weight: 800;
+}
+
+.dish-info-div {
+  grid-template-columns: 600px 100px;
+  width: 750px;
+  padding: 15px 10px;
+  display: grid;
+}
+
+.name-price-div {
+  align-items: center;
+  display: grid;
+}
+
+.dish-image-div {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.dish-name, .dish-price, .dish-description {
+  font-family: Poppins, sans-serif;
+}
+
+.dish-image {
+  border-radius: 10px;
+  box-shadow: 0 7px 29px #64646f33;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 8px 24px #959da533;
+  }
+
+  50% {
+    box-shadow: 0 5px 15px #00000059;
+  }
+
+  100% {
+    box-shadow: 0 8px 24px #959da533;
+  }
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
