@@ -9,6 +9,9 @@ body{
     display: grid;
     grid-template-columns: 1fr
 }
+h4{
+    margin: 0;
+}
 .header{
     display: grid;
     justify-content: center;
@@ -174,7 +177,17 @@ h1{
     aspect-ratio: 16/9;
     object-fit: cover;
 }
-
+.filter-search-body-div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 100px 1fr;
+}
+.filter-search-div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
 .Filter-btn{
     width:75px;
     height:50px;
@@ -226,6 +239,106 @@ h1{
     width: 220px;
     height: 30px;
     background-color: var(--graycolor);
+}
+.menu-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.rest-name,.rest-cuisines, .rest-avgrating, .rest-area-distance{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+}
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:750px;
+    height: 120px;
+   background-color:#faf9f9;
+    border-radius: 15px;
+}
+.title-section-one,.title-section-two{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    height: 70px;
+    margin:10px 15px;
+    padding: 10px 15px;
+}
+.title-section-two{
+    grid-template-rows: 1fr;
+}
+.offer-timing-container{
+    display: flex;
+    justify-content: space-around;
+}
+.time-card, .cost-two-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.menu-filter-btn-div{
+    display: flex;
+    justify-content: center;
+    /* place-content: center; */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    
+    margin-top:10px;
+    margin-left: 10px;
+    background-color:#faf9f9;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.menu-filter-btn-div:hover{
+    cursor: pointer;
+}
+.RestaurantTimeCost_icon__8UdT4{
+    display: flex;
+    margin: 10px;
+}
+.delivery-time, .cost-two{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+}
+.gap-column{
+    height: 15px;
+    background-color: #cdc1c1;
+    margin:10px 0;
+}
+.category{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.dish-info-div{
+    display: grid;
+    width: 750px;
+    grid-template-columns: 600px 100px;
+    padding: 15px 10px;
+}
+.name-price-div{
+    display:grid;
+    align-items: center;
+}
+.dish-image-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dish-name, .dish-price, .dish-description{
+    font-family: 'Poppins', sans-serif;
+
+}
+.dish-image{
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 @keyframes shadow {
     0%{
